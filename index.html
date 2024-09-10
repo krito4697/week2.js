@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>点击灯泡可以实现打开和关闭功能</p>
+    <img id="myimage" onclick="changeImage()" src="images/pic_bulboff.gif" width="100" height="180">
+
+    <script>
+        function changeImage(){
+            const element =document.getElementById('myimage');
+            // let a =element.src.endsWith('pic_bulboff.gif');
+            // console.log(a);
+            if(element.src.endsWith("pic_bulboff.gif"))
+                {
+                    element.src="images/pic_bulbon.gif";
+                }else{
+                    element.src="images/pic_bulboff.gif";
+                    
+                }
+            // alert('函数调用成功');
+            // confirm('函数是否调用成功?');
+            // console.log(a);
+        }  
+    </script>
+</body>
+</html>
